@@ -1,0 +1,16 @@
+name = Schemax Migrate
+description = Faciliates ETL operations using the migrate module
+core = 7.x
+package = Schemax
+version = 7.x-1.0-alpha1
+project = schemax_migrate
+
+;dependencies
+dependencies[] = migrate
+dependencies[] = date_migrate
+dependencies[] = phpexcel
+
+;files
+files[] = schemax_migrate.migrate.inc
+files[] = includes/base.inc
+files[] = includes/users.inc

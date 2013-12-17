@@ -1,0 +1,5 @@
+User ID,Username,Email,Roles
+1,avi,avi@schemax.com,"administrator,content manager"
+2,ben,ben@schemax.com,content manager
+3,chi,chi@schemax.com,authenticated user
+4,dee,dee@schemax.com,content author
