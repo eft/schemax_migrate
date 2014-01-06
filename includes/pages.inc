@@ -60,4 +60,5 @@ class SchemaxMigrationPages extends SchemaxMigration {
     $columns[3] = array('body', 'body');
     return $columns;
   }
+
 }

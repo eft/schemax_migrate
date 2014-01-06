@@ -1,2 +1,2 @@
 FPP ID, Title, Reusable, Admin Title, Admin Description, Admin Category, Page ID
-1, "My example pane",TRUE, "Featured content","A pane that uses an entity reference to user identified nodes to display featured content","Sports",101
+1, "My example pane",1, "Featured content","A pane that uses an entity reference to user identified nodes to display featured content","Sports",101|102

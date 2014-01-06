@@ -14,16 +14,13 @@ class SchemaxMigrationFPPs extends SchemaxMigration {
     $this->description = t('Import field panel panes into the database');
     $this->source = new MigrateSourceCSV($source_file_path, $this->csvcolumns(), array('header_rows' => 1), array());
 
-    $this->map = new MigrateSQLMap($this->machineName,
-      array(
-        'fpid' => array(
-          'type' => 'int',
-          'unsigned' => TRUE,
-          'not null' => TRUE,
-          'description' => 'FPP id'
-        ),
+    $this->map = new MigrateSQLMap($this->machineName, array(
+      'fpid' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'description' => 'FPP ID',
       ),
-      MigrateDestinationFieldablePanelsPanes::getKeySchema()
+        ), MigrateDestinationFieldablePanelsPanes::getKeySchema()
     );
 
     // Create destination
@@ -33,7 +30,7 @@ class SchemaxMigrationFPPs extends SchemaxMigration {
     $this->addFieldMapping(NULL, 'fpid');
     $this->addFieldMapping('title', 'title');
     $this->addFieldMapping('reusable', 'reusable')
-        ->defaultValue(TRUE);
+        ->defaultValue(1);
     $this->addFieldMapping('admin_title', 'admin_title');
     $this->addFieldMapping('admin_description', 'admin_description');
     $this->addFieldMapping('category', 'category');
@@ -41,7 +38,10 @@ class SchemaxMigrationFPPs extends SchemaxMigration {
     // field_featured_content is an entity reference field pointing to one or more page nodes
     $this->addFieldMapping('field_featured_content', 'pgid')
         ->sourceMigration('Pages')
+        ->separator('|')
         ->description('This is an entity reference from the Pages migration');
+
+    $this->addFieldMapping('field_eft', 'fpidt');
 
     $this->addUnmigratedDestinations(array(
       'vid',
@@ -56,6 +56,7 @@ class SchemaxMigrationFPPs extends SchemaxMigration {
       'language',
     ));
   }
+
   /**
    * Source columns array
    * @return mixed
@@ -70,4 +71,5 @@ class SchemaxMigrationFPPs extends SchemaxMigration {
     $columns[6] = array('pgid', 'Page ID');
     return $columns;
   }
+
 }
