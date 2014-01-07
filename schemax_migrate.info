@@ -13,7 +13,5 @@ dependencies[] = phpexcel
 files[] = schemax_migrate.migrate.inc
 files[] = includes/base.inc
 files[] = includes/users.inc
-files[] = includes/pages.inc
-files[] = includes/fpp_example.inc
-;files[] = plugins/destinations/fpp.inc
+
 

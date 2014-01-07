@@ -27,14 +27,6 @@ function schemax_migrate_migrate_api() {
         'class_name' => 'SchemaxMigrationUsers',
         'group_name' => 'users',
       ),
-      'Pages' => array(
-        'class_name' => 'SchemaxMigrationPages',
-        'group_name' => 'content',
-      ),
-      'FPPs' => array(
-        'class_name' => 'SchemaxMigrationFPPs',
-        'group_name' => 'content',
-      ),
     ),
   );
 
