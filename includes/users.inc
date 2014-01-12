@@ -27,7 +27,7 @@ class SchemaxMigrationUsers extends SchemaxMigration {
 
     $this->destination = new MigrateDestinationUser();
 
-   // $this->addFieldMapping('user_id','user_id')// pkey
+    $this->addFieldMapping(NULL,'user_id');// pkey
    //         ->issueGroup(t('DNM'));
     $this->addFieldMapping('name', 'name');
     $this->addFieldMapping('mail', 'mail');

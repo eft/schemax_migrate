@@ -4,8 +4,8 @@
  * @file
  * Drupal needs this blank file.
  */
-function schemax_migrate_menu(){
-
+//function schemax_migrate_menu(){
+//
 //  $items['test'] = array(
 //    'title' => 'Test',
 //    'description' => 'Page used to load a panel display and attach a panel.',
@@ -15,26 +15,26 @@ function schemax_migrate_menu(){
 //    'type' => MENU_NORMAL_ITEM,
 //  );
 //  return $items;
+//
+//}
 
-}
-
-function t123fn(){
-
-  // Identify the display id
-  $did = 1;
-
-  // Load a panels display object
-  $display = panels_load_display($did);
-
-  // Retrieve a fieldable panels panes object
-  $fpp = fieldable_panels_panes_load(1);
-
-  // Add the pane to the display
-  $display->add_pane($fpp);
-
-  // Save the display
-  panels_save_display($display);
-
-
-
-}
+//function t123fn(){
+//
+//  // Identify the display id
+//  $did = 1;
+//
+//  // Load a panels display object
+//  $display = panels_load_display($did);
+//
+//  // Retrieve a fieldable panels panes object
+//  $fpp = fieldable_panels_panes_load(1);
+//
+//  // Add the pane to the display
+//  $display->add_pane($fpp);
+//
+//  // Save the display
+//  panels_save_display($display);
+//
+//
+//
+//}
