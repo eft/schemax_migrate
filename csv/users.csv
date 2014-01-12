@@ -3,3 +3,4 @@ User ID,Username,Email,Roles
 2,ben,ben@schemax.com,content manager
 3,chi,chi@schemax.com,authenticated user
 4,dee,dee@schemax.com,content author
+5,registrar,registrar@schemax.com,registrar
