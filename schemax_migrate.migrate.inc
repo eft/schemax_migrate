@@ -27,6 +27,10 @@ function schemax_migrate_migrate_api() {
         'class_name' => 'SchemaxMigrationUsers',
         'group_name' => 'users',
       ),
+      'DefaultFiles' => array(
+        'class_name' => 'SchemaxMigrationDefaultFiles',
+        'group_name' => 'content',
+      ),
     ),
   );
 

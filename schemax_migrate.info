@@ -13,5 +13,4 @@ dependencies[] = phpexcel
 files[] = schemax_migrate.migrate.inc
 files[] = includes/base.inc
 files[] = includes/users.inc
-
-
+files[] = includes/default_files.inc
